@@ -508,7 +508,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url("../images/home2.jpg");
+	background: url("../images/home1.jpg");
 	background-color: #5b5963;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -520,6 +520,7 @@ textarea.form-control {
 	     -o-background-size: cover;
 	        background-size: cover;
 }
+
 
 #home:after {
 	content: "";
