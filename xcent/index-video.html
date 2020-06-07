@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Ashtin Brannon</title>
+	<title>XCENT - Personal Portfolio Template</title>
 
 	<!-- CSS -->
 	<!-- Bootstrap core CSS -->
@@ -27,13 +26,15 @@
 	<link href="assets/css/owl.theme.css" rel="stylesheet">
 	<link href="assets/css/owl.carousel.css" rel="stylesheet">
 
+    <!-- Youtube background -->
+    <link rel="stylesheet" href="assets/css/ytplayer.css">
+
 	<!-- Animate css -->
 	<link href="assets/css/animate.css" rel="stylesheet">
 
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
 </head>
-
 <body>
 
 	<!-- Preloader -->
@@ -42,21 +43,20 @@
 		<div id="loading-center">
 			<div id="loading-center-absolute">
 				<div class="box">
-					<div class="blobs">
-						<div class="blob"></div>
-						<div class="blob"></div>
-					</div>
+				  <div class="blobs">
+				    <div class="blob"></div>
+				    <div class="blob"></div>
+				  </div>
 
-					<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-						<defs>
-							<filter id="goo">
-								<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-								<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-									result="goo" />
-								<feBlend in="SourceGraphic" in2="goo" />
-							</filter>
-						</defs>
-					</svg>
+				  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				    <defs>
+				      <filter id="goo">
+				        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+				        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+				        <feBlend in="SourceGraphic" in2="goo" />
+				      </filter>
+				    </defs>
+				  </svg>
 				</div>
 			</div>
 		</div>
@@ -67,12 +67,19 @@
 	<section id="home" class="module-image js-height-full">
 
 		<div class="intro">
-			<div class="hello">Hello, my name is Ashtin Brannon and</div>
-			<h1>I am a Full-Stack Web Developer</h1>
+			<div class="hello">Hello, my name is Alice Joseph and</div>
+			<h1>I am Front-End Developer</h1>
 			<div class="who-creates">creating modern and responsive design for Web and Mobile</div>
 		</div>
 
-		<canvas class="background"></canvas>
+		<a id="video" class="youtube-bg" data-property="{videoURL:'https://youtu.be/S4L8T2kFFck',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
+
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+
+
+
 	</section>
 
 	<!-- Home end -->
@@ -92,6 +99,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					<a class="navbar-brand" href="index.html">XCENT</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
@@ -100,13 +108,13 @@
 						<li><a href="#portfolio">Works</a></li>
 						<li><a href="#services">Service</a></li>
 						<li><a href="#about">About</a></li>
-						<!--<li><a href="#testimonial">Testimonial</a></li>-->
-						<!--<li><a href="#blog">Blog</a></li>-->
+						<li><a href="#testimonial">Testimonial</a></li>
+						<li><a href="#blog">Blog</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 
-			</div>
+			</div><!-- .container -->
 
 		</nav>
 
@@ -138,7 +146,9 @@
 
 					<ul id="filter">
 						<li class="active" data-group="all">All</li>
-
+						<li data-group="slideshow">Slideshow</li>
+						<li data-group="video">Video</li>
+						<li data-group="image">Image</li>
 					</ul>
 
 				</div>
@@ -150,179 +160,72 @@
 		</div><!-- .contaier -->
 
 		<ul class="list-items-container">
-			<!--Crystal Collector Game-->
+
 			<li class="list-item" data-groups="all slideshow">
 				<figure>
-					<a href="https://ashtinannb.github.io/Crystal-Collector/"></a>
-					<img src="assets/images/crystalcollector.png" alt="p1">
+					<img src="assets/images/p1-1.jpg" alt="p1">
 					<figcaption>
 						<a href="assets/images/p1-1.jpg" class="simple-ajax-popup"></a>
 						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Crystal-Collector</h3>
-							<div class="portfolio-item-desc">Game</div>
+							<h3 class="portfolio-item-title">Some work one</h3>
+							<div class="portfolio-item-desc">Slideshow</div>
 						</div>
 					</figcaption>
 				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Crystal-Collector</button>
 			</li>
-			<!--Psychic Game-->
+
 			<li class="list-item" data-groups="all video">
 				<figure>
-					<a href="https://ashtinannb.github.io/Psychic-Game/"></a>
-					<img src="assets/images/psychic1.jpg" alt="p2">
+					<img src="assets/images/p2-2.jpg" alt="p2">
 					<figcaption>
 						<a href="assets/images/p2-2.jpg" class="simple-ajax-popup"></a>
 						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Psychic</h3>
-							<div class="portfolio-item-desc">Game</div>
+							<h3 class="portfolio-item-title">Some work one</h3>
+							<div class="portfolio-item-desc">Video</div>
 						</div>
 					</figcaption>
 				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Psychic-Game</button>
-			</li>
-			<!--Harry Potter Trivia Game-->
-			<li class="list-item" data-groups="all slideshow">
-				<figure>
-					<a href="https://ashtinannb.github.io/Harry-Potter-Trivia-Game/"></a>
-					<img src="assets/images/potter.jpg" alt="p4">
-					<figcaption>
-						<a href="assets/images/p4-4.jpg" class="simple-ajax-popup"></a>
-						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Harry Potter</h3>
-							<div class="portfolio-item-desc">Trivia Game</div>
-						</div>
-					</figcaption>
-				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Harry-Potter-Trivia-Game</button>
 			</li>
 
-				<!-- Liri Bot-->
-		<li class="list-item" data-groups="all image">
-			<figure>
-				<img src="assets/images/liri.png" alt="p6">
-				<figcaption>
-					<a href="assets/images/p6-6.jpg" class="simple-ajax-popup"></a>
-					<div class="caption-inner">
-						<h3 class="portfolio-item-title">Liri Bot</h3>
-						<div class="portfolio-item-desc">A node based app.</div>
-					</div>
-				</figcaption>
-			</figure>
-			<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/LIRI.git</button>
-		</li>
-		
-			<!--Project 1-->
 			<li class="list-item" data-groups="all image">
 				<figure>
-					<a href="https://reekamaharaj.github.io/Project1/"></a>
-					<img src="assets/images/foodle.png" alt="p3">
+					<img src="assets/images/p3-3.jpg" alt="p3">
 					<figcaption>
 						<a href="assets/images/p3-3.jpg" class="simple-ajax-popup"></a>
 						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Foodle</h3>
-							<div class="portfolio-item-desc">Collaboration</div>
+							<h3 class="portfolio-item-title">Some work one</h3>
+							<div class="portfolio-item-desc">Image</div>
 						</div>
 					</figcaption>
 				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/reekamaharaj/Project1</button>
 			</li>
-		
-			
-		
-			<!--Gif-Tastic-->
+
+			<li class="list-item" data-groups="all slideshow">
+				<figure>
+					<img src="assets/images/p4-4.jpg" alt="p4">
+					<figcaption>
+						<a href="assets/images/p4-4.jpg" class="simple-ajax-popup"></a>
+						<div class="caption-inner">
+							<h3 class="portfolio-item-title">Some work one</h3>
+							<div class="portfolio-item-desc">Slideshow</div>
+						</div>
+					</figcaption>
+				</figure>
+			</li>
+
 			<li class="list-item" data-groups="all video">
 				<figure>
-					<a href="https://ashtinannb.github.io/Gif-Tastic/"></a>
-					<img src="assets/images/giftastic.png" alt="p5">
+					<img src="assets/images/p5-5.jpg" alt="p5">
 					<figcaption>
 						<a href="assets/images/p5-5.jpg" class="simple-ajax-popup"></a>
 						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Gif-Tastic</h3>
-							<div class="portfolio-item-desc">My Favorite Shows</div>
-						</div>
-					</figcaption>
-				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Gif-Tastic.git</button>
-			</li>
-
-			<!--Train Scheduler-->
-			<li class="list-item" data-groups="all image">
-				<figure>
-					<a href="https://ashtinannb.github.io/Train-Scheduler/"></a>
-					<img src="assets/images/train.PNG" alt="p6">
-					<figcaption>
-						<a href="assets/images/train.PNG" class="simple-ajax-popup"></a>
-						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Train Scheduler</h3>
-							<div class="portfolio-item-desc">Firebase App</div>
-						</div>
-					</figcaption>
-				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Train-Scheduler.git</button>
-			</li>
-		
-			<!--Project 2-->
-			<li class="list-item" data-groups="all image">
-				<figure>
-					<a href="https://postnoteproject.herokuapp.com/"></a>
-					<img src="assets/images/logo2.png" alt="p6">
-					<figcaption>
-						<a href="assets/images/logo2.png" class="simple-ajax-popup"></a>
-						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Post Note</h3>
-							<div class="portfolio-item-desc">Collaboration</div>
-						</div>
-					</figcaption>
-				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/project2.git</button>
-			</li>
-		<!-- Find a Friend 
-			<li class="list-item" data-groups="all image">
-				<figure>
-					<a href="https://friend-finderhw9.herokuapp.com/"></a>
-					<img src="assets/images/p6-6.jpg" alt="p6">
-					<figcaption>
-						<a href="assets/images/p6-6.jpg" class="simple-ajax-popup"></a>
-						<div class="caption-inner">
 							<h3 class="portfolio-item-title">Some work one</h3>
-							<div class="portfolio-item-desc">Image</div>
+							<div class="portfolio-item-desc">Video</div>
 						</div>
 					</figcaption>
 				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Friend-Finder.git</button>
+			</li>
 
-			</li>
-		-->
-		<!--Bamazon-->
-			<li class="list-item" data-groups="all image">
-				<figure>
-					<img src="assets/images/init.png" alt="p6">
-					<figcaption>
-						<a href="assets/images/p6-6.jpg" class="simple-ajax-popup"></a>
-						<div class="caption-inner">
-							<h3 class="portfolio-item-title">Bamazon</h3>
-							<div class="portfolio-item-desc">A node based app.</div>
-						</div>
-					</figcaption>
-				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/Bamazon.git</button>
-			</li>
-			<!-- YUM Icecream-->
-			<li class="list-item" data-groups="all image">
-				<figure>
-					<a href="https://yum-icecream.herokuapp.com/"></a>
-					<img src="assets/images/yum.PNG" alt="p6">
-					<figcaption>
-						<a href="assets/images/p6-6.jpg" class="simple-ajax-popup"></a>
-						<div class="caption-inner">
-							<h3 class="portfolio-item-title">YUM! Icecream!</h3>
-							<div class="portfolio-item-desc">Working w/ Handlebars</div>
-						</div>
-					</figcaption>
-				</figure>
-				<button type="linkbutton" class="btn btn-link">https://github.com/ashtinannb/YUM-icecream.git</button>
-			</li>
-		<!-- FUTURE WORKS
 			<li class="list-item" data-groups="all image">
 				<figure>
 					<img src="assets/images/p6-6.jpg" alt="p6">
@@ -335,14 +238,12 @@
 					</figcaption>
 				</figure>
 			</li>
-		-->
-		</ul>
+
+		</ul><!-- .projects-container -->
 
 	</section>
 
 	<!-- Portfolio end -->
-
-
 
 	<!-- Services start -->
 
@@ -367,8 +268,7 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Web Design</h3>
 							<div class="iconbox-desc">
-								<!--								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
--->
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
 							</div>
 						</div>
 					</div>
@@ -381,8 +281,7 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Web Development</h3>
 							<div class="iconbox-desc">
-								<!--								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
--->
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
 							</div>
 						</div>
 					</div>
@@ -393,10 +292,9 @@
 							<i class="fab fa-sketch"></i>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Business Management</h3>
+							<h3 class="iconbox-title">Logo Design</h3>
 							<div class="iconbox-desc">
-								<!--								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
--->
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
 							</div>
 						</div>
 					</div>
@@ -409,10 +307,9 @@
 							<i class="far fa-comments"></i>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Human Resource Management</h3>
+							<h3 class="iconbox-title">Marketing</h3>
 							<div class="iconbox-desc">
-								<!--								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
--->
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
 							</div>
 						</div>
 					</div>
@@ -428,8 +325,7 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Design</h3>
 							<div class="iconbox-desc">
-								<!--								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
--->
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
 							</div>
 						</div>
 					</div>
@@ -443,10 +339,9 @@
 							<i class="fas fa-rocket"></i>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Information Technology</h3>
+							<h3 class="iconbox-title">Branding</h3>
 							<div class="iconbox-desc">
-								<!--								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
--->
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
 							</div>
 						</div>
 					</div>
@@ -479,7 +374,7 @@
 								<span>About</span>
 							</h2>
 							<!-- <div class="module-subtitle">
-								
+								He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
 							</div> -->
 							<div class="module-line"></div>
 						</div>
@@ -494,12 +389,12 @@
 
 						<div class="iconboxleft wow fadeInUp">
 							<div class="iconboxleft-icon">
-								<i class="fas fa-dog"></i>
+								<i class="fas fa-camera-retro"></i>
 							</div>
 							<div class="iconboxleft-text">
-								<h3 class="iconboxleft-title">Dog Mom</h3>
+								<h3 class="iconboxleft-title">Photographer</h3>
 								<div class="iconboxleft-desc">
-									I am an animal lover, and have 3 dogs. Terra, Maggie, & Kyla.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
 								</div>
 							</div>
 						</div>
@@ -510,12 +405,12 @@
 
 						<div class="iconboxleft wow fadeInUp" data-wow-delay=".2s">
 							<div class="iconboxleft-icon">
-								<i class="fas fa-gamepad"></i>
+								<i class="fas fa-headphones-alt"></i>
 							</div>
 							<div class="iconboxleft-text">
-								<h3 class="iconboxleft-title">Games</h3>
+								<h3 class="iconboxleft-title">Music</h3>
 								<div class="iconboxleft-desc">
-									Current Play: Alice Madness Returns -- Shalnor Legends : Sacred Lands
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt . 
 								</div>
 							</div>
 						</div>
@@ -530,12 +425,12 @@
 
 						<div class="iconboxleft wow fadeInUp">
 							<div class="iconboxleft-icon">
-								<i class="fas fa-book-open"></i>
+								<i class="fas fa-paint-brush"></i>
 							</div>
 							<div class="iconboxleft-text">
-								<h3 class="iconboxleft-title">Books</h3>
+								<h3 class="iconboxleft-title">Painting</h3>
 								<div class="iconboxleft-desc">
-									Current Read: Outlander
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
 								</div>
 							</div>
 						</div>
@@ -551,7 +446,7 @@
 							<div class="iconboxleft-text">
 								<h3 class="iconboxleft-title">Magic</h3>
 								<div class="iconboxleft-desc">
-									A passion for fantasy and science fiction.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
 								</div>
 							</div>
 						</div>
@@ -567,7 +462,7 @@
 
 	<!-- About end -->
 
-	<!-- Testimonial start 
+	<!-- Testimonial start -->
 
 	<div id="testimonial" class="module module-gray text-center">
 		<div class="container">
@@ -604,16 +499,16 @@
 					</div>
 
 				</div>
-			-->
-	</div><!-- .row -->
-	</div><!-- .container -->
+
+			</div><!-- .row -->
+		</div><!-- .container -->
 	</div>
 
-	<!--Testimonial end -->
+	<!-- Testimonial end -->
 
 	<!-- Blog start -->
 
-	<!--<section id="blog" class="module blog">
+	<section id="blog" class="module blog">
 		<div class="container">
 
 			<div class="module-header">
@@ -624,7 +519,7 @@
 			</div>
 
 			<div class="row">
-				<!--
+
 				<div class="col-sm-4">
 					<a href="blog-detail.html" class="blogList wow fadeInUp">
 						<div class="blogList-img">
@@ -663,45 +558,24 @@
 						</div>
 					</a>
 				</div>
-			-->
-				<p>
-					<!--<center>Coming Soon!</center>
-				</p>
 
 				<div class="col-sm-12">
 					<a class="blog-viewMore" href="blog.html">VIEW MORE</a>
 				</div>
 
-			</div>  
-
-		</div>
-	</section> -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
 
 	<!-- Blog end -->
 
 	<!-- Google Map start-->
-<!--
-	<div id="map-section">
-		<iframe width="1500" height="500" id="gmap_canvas"
-			src="https://maps.google.com/maps?q=Austin&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-			scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
-	<style>
-		.mapouter {
-			position: relative;
-			text-align: center;
-			height: 500px;
-			width: 600px;
-		}
 
-		.gmap_canvas {
-			overflow: hidden;
-			background: none !important;
-			height: 500px;
-			width: 600px;
-		}
-	</style>
+	<div id="map-section">
+
+		<div id="map"></div>
+
 	</div>
-	<div id="map"></div> -->
 
 	<!-- Google Map end -->
 
@@ -711,12 +585,9 @@
 		<div class="container">
 
 			<div class="module-header">
-				<h1 class="module-title">Contact
+				<h2 class="module-title">Contact
 					<span>Contact</span>
-				</h1>
-				<h2>ashtinannbrannon@gmail.com</h2>
-				<h2>361-319-3009</h2>
-				<!--Need to get email functional
+				</h2>
 				<div class="module-line"></div>
 			</div>
 
@@ -729,31 +600,27 @@
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
 								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name"
-									required>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name" required>
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
 								<label class="sr-only" for="c_email">Email address</label>
-								<input type="email" id="c_email" class="form-control" name="c_email"
-									placeholder="E-mail" required>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail" required>
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7"
-									placeholder="Your message" required></textarea>
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message" required></textarea>
 							</div>
 
-							<button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp"
-								data-wow-delay=".3s">Send Message
+							<button type="submit" class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s">Send Message
 							</button>
 						</div>
 						<div class="ajax-response"></div>
 					</form>
 
-				</div> 
+				</div>
 
-			</div>.row -->
+			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
 
@@ -768,17 +635,15 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<!--<li><a href="#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fab fa-twitter"></i></a></li>-->
-						<li><a href="https://github.com/ashtinannb" class="wow fadeInUp" data-wow-delay=".2s"><i
-									class="fab fa-github"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/ashtin-brannon-95b4ab199/" class="wow fadeInUp"
-								data-wow-delay=".3s"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="https://www.pinterest.com/abrannnon/" class="wow fadeInUp" data-wow-delay=".4s"><i
-									class="fab fa-pinterest-p"></i></a></li>
+						<li><a href="#" class="wow fadeInUp"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#" class="wow fadeInUp" data-wow-delay=".3s"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fab fa-pinterest-p"></i></a></li>
 					</ul>
 
 					<p class="copyright">
-						© 2020 AshtinB, All Rights Reserved.
+						© 2019 beingeorge, All Rights Reserved.
 					</p>
 
 				</div>
@@ -808,26 +673,16 @@
 	<script src="assets/js/jquery.sticky.js"></script>
 	<script src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/wow.min.js"></script>
-
-	<!--PARTICLES ANIMATE JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-	<script src="assets/js/particles.app.js"></script>
-
-
-
-
+	<!-- Youtube background -->
+	<script src="assets/js/jquery.mb.YTPlayer.js"></script> 
+	<!-- Google Map js -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg "></script>
+	<script src="assets/js/map.js"></script>
 	<!-- Custom scripts -->
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/custom-shuffle-init.js"></script>
-
-	<script type="text/javascript">
-		window.onload = function () {
-			Particles.init({
-				selector: '.background'
-			});
-		};
-	</script>
-
+	<script>
+        $(".youtube-bg").mb_YTPlayer();
+    </script>
 </body>
-
 </html>
